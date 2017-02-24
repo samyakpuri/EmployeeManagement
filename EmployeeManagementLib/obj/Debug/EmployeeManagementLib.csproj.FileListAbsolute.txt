@@ -1,0 +1,10 @@
+C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\bin\Debug\EmployeeManagementLib.dll.config
+C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\bin\Debug\EmployeeManagementLib.dll
+C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\bin\Debug\EmployeeManagementLib.pdb
+C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\bin\Debug\EntityFramework.dll
+C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\bin\Debug\EntityFramework.xml
+C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.dll
+C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.pdb
+C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.csprojResolveAssemblyReference.cache
