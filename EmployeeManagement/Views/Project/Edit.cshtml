@@ -8,6 +8,7 @@
 
 @using (Html.BeginForm())
 {
+    @Html.HiddenFor(m => m.ProjectId)
     @Html.AntiForgeryToken()
     <div class="form-group">
         @Html.LabelFor(model => model.ProjectName, htmlAttributes: new { @class = "control-label col-md-2" })

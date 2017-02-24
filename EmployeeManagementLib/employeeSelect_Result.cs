@@ -17,6 +17,8 @@ namespace EmployeeManagementLib
         public int EmployeeId { get; set; }
         public string ContactNo { get; set; }
         public string Address { get; set; }
+        public string Designation { get; set; }
+        public string Active { get; set; }
         public string Email { get; set; }
         public string Gender { get; set; }
         public System.DateTime DOB { get; set; }

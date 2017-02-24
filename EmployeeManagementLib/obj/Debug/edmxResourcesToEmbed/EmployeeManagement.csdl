@@ -6,8 +6,8 @@
     </Key>
     <Property Name="DepartmentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="DepartmentName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="7" />
     <Property Name="Active" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Employees" Relationship="Self.FK_Employee_Department" FromRole="Department" ToRole="Employee" />
   </EntityType>
@@ -23,13 +23,13 @@
     <Property Name="Email" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
     <Property Name="Designation" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Gender" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="DOB" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DOB" Type="DateTime" Nullable="false" Precision="7" />
     <Property Name="Project" Type="Int32" />
     <Property Name="Department" Type="Int32" />
     <Property Name="Salary" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="LastUpdated" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="Active" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Active" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Department1" Relationship="Self.FK_Employee_Department" FromRole="Employee" ToRole="Department" />
     <NavigationProperty Name="Project1" Relationship="Self.FK_Employee_Project" FromRole="Employee" ToRole="Project" />
     <NavigationProperty Name="Projects" Relationship="Self.FK_Project_Employee" FromRole="Employee" ToRole="Project" />
@@ -42,8 +42,8 @@
     <Property Name="ProjectName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ProjectStatus" Type="Int16" Nullable="false" />
     <Property Name="ProjectManager" Type="Int32" Nullable="false" />
-    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="7" />
     <Property Name="Active" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Employees" Relationship="Self.FK_Employee_Project" FromRole="Project" ToRole="Employee" />
     <NavigationProperty Name="Employee" Relationship="Self.FK_Project_Employee" FromRole="Project" ToRole="Employee" />
@@ -55,8 +55,8 @@
     </Key>
     <Property Name="StatusId" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Status1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="7" />
     <Property Name="Active" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Projects" Relationship="Self.FK_Project_Status" FromRole="Status" ToRole="Project" />
   </EntityType>
@@ -142,12 +142,14 @@
     <Property Type="Int32" Name="EmployeeId" Nullable="false" />
     <Property Type="String" Name="ContactNo" Nullable="false" MaxLength="16" />
     <Property Type="String" Name="Address" Nullable="false" MaxLength="Max" />
+    <Property Type="String" Name="Designation" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Active" Nullable="false" MaxLength="10" />
     <Property Type="String" Name="Email" Nullable="true" MaxLength="25" />
     <Property Type="String" Name="Gender" Nullable="false" MaxLength="1" />
-    <Property Type="DateTime" Name="DOB" Nullable="false" Precision="16" />
+    <Property Type="DateTime" Name="DOB" Nullable="false" />
     <Property Type="String" Name="Salary" Nullable="false" MaxLength="10" />
-    <Property Type="DateTime" Name="CreateDate" Nullable="false" Precision="16" />
-    <Property Type="DateTime" Name="LastUpdated" Nullable="false" Precision="16" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdated" Nullable="false" />
     <Property Type="Int32" Name="Department" Nullable="true" />
     <Property Type="Int32" Name="Project" Nullable="true" />
   </ComplexType>

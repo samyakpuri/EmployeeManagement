@@ -6,8 +6,8 @@
     </Key>
     <Property Name="DepartmentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="DepartmentName" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
-    <Property Name="UpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime2" Precision="7" Nullable="false" />
     <Property Name="Active" Type="varchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="Employee">
@@ -22,13 +22,13 @@
     <Property Name="Email" Type="varchar" MaxLength="25" />
     <Property Name="Designation" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="Gender" Type="char" MaxLength="1" Nullable="false" />
-    <Property Name="DOB" Type="smalldatetime" Nullable="false" />
+    <Property Name="DOB" Type="datetime2" Precision="7" Nullable="false" />
     <Property Name="Project" Type="int" />
     <Property Name="Department" Type="int" />
     <Property Name="Salary" Type="varchar" MaxLength="10" Nullable="false" />
-    <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
-    <Property Name="LastUpdated" Type="smalldatetime" Nullable="false" />
-    <Property Name="Active" Type="varchar" MaxLength="10" />
+    <Property Name="CreateDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Active" Type="varchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="Project">
     <Key>
@@ -38,8 +38,8 @@
     <Property Name="ProjectName" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="ProjectStatus" Type="smallint" Nullable="false" />
     <Property Name="ProjectManager" Type="int" Nullable="false" />
-    <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
-    <Property Name="UpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime2" Precision="7" Nullable="false" />
     <Property Name="Active" Type="varchar" MaxLength="10" />
   </EntityType>
   <EntityType Name="Status">
@@ -48,8 +48,8 @@
     </Key>
     <Property Name="StatusId" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
-    <Property Name="UpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime2" Precision="7" Nullable="false" />
     <Property Name="Active" Type="varchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <Association Name="FK_Employee_Department">

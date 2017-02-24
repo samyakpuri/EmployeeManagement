@@ -8,3 +8,12 @@ C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\bi
 C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.dll
 C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.pdb
 C:\Users\spuri4\Box Sync\Training\EmployeeManagementLib\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Box Sync\EmployeeManagement\EmployeeManagementLib\bin\Debug\EmployeeManagementLib.dll.config
+C:\Users\spuri4\Box Sync\EmployeeManagement\EmployeeManagementLib\bin\Debug\EmployeeManagementLib.dll
+C:\Users\spuri4\Box Sync\EmployeeManagement\EmployeeManagementLib\bin\Debug\EmployeeManagementLib.pdb
+C:\Users\spuri4\Box Sync\EmployeeManagement\EmployeeManagementLib\bin\Debug\EntityFramework.dll
+C:\Users\spuri4\Box Sync\EmployeeManagement\EmployeeManagementLib\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\spuri4\Box Sync\EmployeeManagement\EmployeeManagementLib\bin\Debug\EntityFramework.xml
+C:\Users\spuri4\Box Sync\EmployeeManagement\EmployeeManagementLib\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\spuri4\Box Sync\EmployeeManagement\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.dll
+C:\Users\spuri4\Box Sync\EmployeeManagement\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.pdb

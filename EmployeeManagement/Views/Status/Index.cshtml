@@ -2,6 +2,8 @@
 
 @{
     ViewBag.Title = "Index";
+    EmployeeManagementLib.EmployeeManagementEntities db = new EmployeeManagementLib.EmployeeManagementEntities();
+    
 }
 
 <h2>Index</h2>
@@ -15,7 +17,7 @@
             @Html.DisplayNameFor(model => model.StatusId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Status1)
+            @Html.DisplayName("Status")
         </th>
         <th>
             @Html.DisplayNameFor(model => model.CreateDate)
@@ -47,11 +49,70 @@
             @Html.DisplayFor(modelItem => item.Active)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.StatusId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.StatusId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.StatusId })
+            <a href="#" data-toggle="modal" data-target="#editModal">Edit</a> |
+
+            <!-- Modal -->
+            <div id="editModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Edit Status</h4>
+                        </div>
+                        <div class="modal-body">
+                            @Html.Partial("Edit", item)
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="#" data-toggle="modal" data-target="#detailsModal">Details</a> |
+
+            <!-- Modal -->
+            <div id="detailsModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Details</h4>
+                        </div>
+                        <div class="modal-body">
+                            @Html.Partial("Details", item)
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="#" data-toggle="modal" data-target="#deleteModal">Delete</a>
+
+            <!-- Modal -->
+            <div id="deleteModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Delete Status</h4>
+                        </div>
+                        <div class="modal-body">
+                            @Html.Partial("Delete", item)
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </td>
     </tr>
 }
 
 </table>
+
+
+

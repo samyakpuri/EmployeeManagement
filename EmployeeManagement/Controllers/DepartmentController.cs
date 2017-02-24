@@ -1,6 +1,7 @@
 ﻿using EmployeeManagementLib;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -49,6 +50,7 @@ namespace EmployeeManagement.Views.Dashboard
         public ActionResult Edit(Department department)
         {
             department.UpdateDate = DateTime.Now;
+            db.Entry(department).State = EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("Index");
         }
