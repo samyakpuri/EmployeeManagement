@@ -36,3 +36,9 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
+
+<script type="text/javascript">
+    $.post("ajax/test.html", function (data) {
+        $(".result").html(data);
+    });
+</script>
